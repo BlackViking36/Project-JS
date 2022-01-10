@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+// HEADER
+@import "scss/header";
+
+// INDEX
+@import "scss/index";
+
+// ECOMMERCE
+@import "scss/ecommerce";
+
+// CONTACT
+@import "scss/contacto";
+
+// FOOTER
+@import "scss/footer";
+
+@import "scss/error404";
+
+// PRELOADER
+@import "scss/preloader";

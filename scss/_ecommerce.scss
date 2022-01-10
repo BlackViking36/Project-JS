@@ -1,0 +1,105 @@
+/* ECOMMERCE */
+@import "variables";
+
+.itemList{
+    display: flex;/*activo flexbox*/
+    flex-direction: row;/*direccion que quiero que esten los elementos*/
+    justify-content: center;/*alineacion horizontal centro*/
+    align-items: flex-start;/*alineacion vertical al principio*/
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+
+    .contRight{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 2rem 2rem;
+        align-items: end;
+        width: 100%;
+    }
+
+    .contLeft {
+
+        & h1 {
+        color: $colortitle;
+        }
+
+        & h2 {
+        font-size: 1.5rem;
+        }
+    }
+
+    .contLeft-btn {
+        width: 120px;
+        height: 35px;
+        border-radius: .5rem;
+        border:none;
+        background-color: $fondo;
+        color: $fondomain;
+        transition: all .5s;
+
+        &:hover {
+        background-color: rgba($color: #000000, $alpha: .8);
+        transition: all .5s;
+        }
+    }
+
+}
+
+    /* BOTON CARD */
+.button {
+    color: $colortitle;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 0 auto 2em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    width: 90%;
+    z-index: 0;
+    border: 1px solid $colortitle;
+
+    &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: $colortitle;
+    transition: all 500ms ease;
+    z-index: -1;
+    }
+
+    &--prod::before {
+        width: 0;
+        height: 100%;
+    }
+    &--prod:hover {
+    color: $fondomain;
+    }
+    &--prod:hover::before {
+    width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .itemList {
+        flex-direction: column;
+    }
+    .itemList .contLeft{
+    width: 100%;
+    height: auto;
+    }
+}
+
+/* FIN ECOMMERCE */

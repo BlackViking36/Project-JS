@@ -1,0 +1,30 @@
+/* ERROR-404 */
+@import "variables";
+
+.body-error {
+    background-color: $colortitle;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.cont-error {
+    color: $fondomain;
+    font-weight: 700;
+
+    & h1 {
+        font-size: 4rem;
+    }
+
+    & p {
+        font-size: 2rem;
+    }
+}
+
+.btn-error {
+
+    & a {
+        font-size: 1.5rem;
+        color: $fondomain;
+    }
+}

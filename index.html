@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Techno Aion. Especialistas del mundo del PC Gamer, Dedicados a la venta de hardware. Ofrecemos el mejor asesoramiento y los mejores precios.">
+    <meta name="keywords" content="pc, Gaming, gamer, computadoras, computacion, informatica, monitor, placa de video, gpu, fuente, cpu, micro, procesador, memoria, ram, 144hz, motherboard, placa madre, informatica, arma tu pc, disco rigido, disco solido, hdd, ssd, teclado, mouse, mecanico, optico, pc armada, rgb, Hardware, almacenamiento">
+    <title>.NET Computacion</title>
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="./multimedia/iconoaion.png">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="css/styles.css"> 
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- BUSCADOR MOBILE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- LOGO / BUSCADOR / SESSION -->
+        <div class="container">
+            <div class="headertop">
+
+                <div class="headertopLogo">
+                    <a href="./index.html" class="headertopThumbnail">
+                        <img class="headertopImg" src="./multimedia/logoheader.png" alt="Logo de Techno Aion">
+                    </a>
+                </div>
+    
+                <div id="searchbar" class="search search--buscar">
+                    <input class="searchTxt" type="search" id="search" name="" placeholder="Buscar...">
+                    <button class="boton">
+                        <img class="botonIcon" src="./multimedia/iconos/searchwhite.svg" alt="Buscar">
+                    </button>
+                </div>
+    
+                <div class="iconstop">
+
+                    <!-- BOTON QUE AL CLICKEAR APARECE EL BUSCADOR -->
+                    <a href="#" id="btnsearch" class="buscar-icon"><img src="./multimedia/iconos/searchwhite.svg" class="botonIcon botonIcon--buscar" alt=""></a>
+
+                    <a class="iconstopThumbnail" href="./error-404.html">
+                        <img src="./multimedia/iconos/loginnoconec.svg" class="botonIcon" alt="Login de cuenta">
+                        <span class="iconstopTxt">Mi cuenta</span>
+                    </a>
+
+                    <a class="iconstopThumbnail" href="./error-404.html">
+                        <img src="./multimedia/iconos/shopnoconec.svg" class="botonIcon" alt="Carrito de compras">
+                        <span class="iconstopTxt">Mi carrito</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MENU -->
+        <input type="checkbox" id="navCheckbox" class="navCheckbox">
+            <label for="navCheckbox" class="navToggle">
+                <i class="fas fa-bars burger"></i>
+            </label>
+        <nav class="nav">
+                <ul class="menu">
+                    <li class="menuItem"><a class="menuLink" href="./index.html">Inicio</a></li>
+                    <li class="menuItem"><a class="menuLink" href="./pages/computadoras.html">Computadoras</a></li>
+                    <li class="menuItem"><a class="menuLink" href="./pages/notebooks.html">Notebooks</a></li>
+                    <li class="menuItem"><a class="menuLink" href="./pages/productos.html">Productos</a></li>
+                    <li class="menuItem"><a class="menuLink" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- SLIDER -->
+        <div id="carouselCabecera" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./multimedia/sliderindex/slider.jpg" class="d-block w-100" alt="En techno aion sabemos de tu exigencia">
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/sliderindex/slider2.jpg" class="d-block w-100" alt="Memorias ram fury">
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/sliderindex/slider3.jpg" class="d-block w-100" alt="Aorus marca lider en gaming">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabecera" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon prev-icon--sli" aria-hidden="true"><i class="left fas fa-angle-left fa-3x"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCabecera" data-bs-slide="next">
+                <span class="carousel-control-next-icon next-icon--sli" aria-hidden="true"><i class="right fas fa-angle-right fa-3x"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- FIN SLIDER -->
+
+        <!-- CATEGORIAS -->
+        <div class="container mt-5 mb-5">
+            <div class="row">
+
+                <div class="col-md-4 col-xs-12">
+                    <a href="./pages/computadoras.html">
+                        <div class="imagen">
+                            <img class="img-fluid imagenZoom" src="./multimedia/categorias/categoriacom.jpg" alt="Imagen que redirecciona a seccion de computadoras Armadas">
+                            <div class="imagenInfo">
+                                <h2 class="imagenTittle">Computadoras</h2>
+                                <p class="imagenTxt">Armadas para vos</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <a href="./pages/notebooks.html">
+                        <div class="imagen">
+                            <img class="img-fluid imagenZoom" src="./multimedia/categorias/categorianot.jpg" alt="Imagen que redirecciona a seccion de notebooks">
+                            <div class="imagenInfo">
+                                <h2 class="imagenTittle">Notebooks</h2>
+                                <p class="imagenTxt">Home office</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <a href="./pages/productos.html">
+                        <div class="imagen">
+                            <img class="img-fluid imagenZoom" src="./multimedia/categorias/categoriaprod.jpg" alt="Imagen que redirecciona a seccion de productos">
+                            <div class="imagenInfo">
+                                <h2 class="imagenTittle">Productos</h2>
+                                <p class="imagenTxt">Las mejores marcas</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN CATEGORIAS -->
+
+        <!-- INFORMACION BREVE -->
+        <div class="container">
+            <h1 class="titulo titulo-mg" data-aos="fade-right" data-aos-duration="3000">Equipate con las mejores marcas</h1>
+            <p class="texto" data-aos="fade-left" data-aos-duration="3000">En Techno Aion nos esforzamos para brindar accesorios de la mejor calidad a nuestros clientes, por eso, elegimos las mejores marcas 
+            y que se encuentren en constante desarrollo de sus productos.</p>
+        </div>
+        <!-- FIN INFORMACION BREVE -->
+
+    <!-- LOGOS DE MARCAS -->
+    <div class="container">
+        <div class="row align-items-center mb-5 mt-5" >
+
+            <div class="col-12 col-sm-6 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="3000">
+                <img class="logo-marca" src="./multimedia/logosmarcas/amd.svg" alt="Imagen del logo de amd">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="3000">
+                <img class="logo-marca" src="./multimedia/logosmarcas/intel.svg" alt="Imagen del logo de intel">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="3000">
+                <img class="logo-marca" src="./multimedia/logosmarcas/westerndigital.svg" alt="Imagen del logo de Western Digital">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="3000">
+                <img class="logo-marca" src="./multimedia/logosmarcas/gigabyte.svg" alt="Imagen del logo gigabyte">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="3000">
+                <img class="logo-marca" src="./multimedia/logosmarcas/kingston.svg" alt="Imagen del logo de Kingston">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="3000">
+                <img class="logo-marca" src="./multimedia/logosmarcas/nvidia.svg" alt="Imagen del logo de Nvidia">
+            </div>
+
+        </div>
+    </div>
+    <!-- FIN LOGOS MARCAS -->
+
+    <!-- PRODUCTOS MAS VENDIDOS -->
+    <div class="container">
+        <h2 class="titulo-prod">Productos destacados</h2>
+    </div>
+
+    <section class="productosPopulares container mb-5">
+
+        <div id="carouselProductos" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel"> <!-- CARRUSEL PRODUCTOS -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/tuf-gaming-z490-plus.png" class="img-fluid" alt="Motherboard TUF Gaming Z490 Plus">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Motherboard TUF Gaming Z490 Plus</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/ssd-240gb-gigabyte.png" class="img-fluid" alt="Disco solido SSD Gigabyte 240GB">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Disco solido SSD Gigabyte 240GB</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/r5-5600x.png" class="img-fluid" alt="Procesador AMD Ryzen 5 5600X">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Procesador AMD Ryzen 5 5600X</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/i5-10400.png" class="img-fluid" alt="Procesador Intel i5 10400">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Procesador Intel i5 10400</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/hyperx-ram-8gb-2600.png" class="img-fluid" alt="Memoria RAM Hyperx 8GB 2600MHz">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Memoria RAM Hyperx 8GB 2600MHz</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/cooler-master-v3-600w.png" class="img-fluid" alt="Fuente Cooler Master Elite V6 600W">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Fuente Cooler Master Elite V6 600W</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/3070.png" class="img-fluid" alt="Placa de video RTX 3070 EVGA">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Placa de video RTX 3070 EVGA</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="cardprod">
+                                <div class="cardprodImg d-flex justify-content-center col-12">
+                                    <img src="./multimedia/productos/3060ti.png" class="img-fluid" alt="Placa de video RTX 3060ti Gigabyte">
+                                </div>
+                                <div class="cardprodInfo">
+                                    <p>Placa de video RTX 3060ti Gigabyte</p>
+                                </div>
+                                <div class="cardprodPrecio">
+                                    <span>$ 99.999</span>
+                                    <a class="button button--prod" href="#">Añadir al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev control-prev--new" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon icon--prev" aria-hidden="true"><i class="left fas fa-angle-left fa-3x"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next control-next--new" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                <span class="carousel-control-next-icon icon--next" aria-hidden="true"><i class="right fas fa-angle-right fa-3x"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+    <!-- FIN PRODUCTOS MAS VENDIDOS -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footerInfo">
+        <div class="row d-flex justify-content-center">
+
+            <div class="suscripcion">
+                <div class="suscripcionTxt">
+                    <h3>SÉ EL PRIMERO EN ENTERARTE</h3>
+                    <p>Suscribite y recibí las mejores ofertas!</p>
+                </div>
+
+                <div class="search search--sub">
+                    <input class="searchTxt" type="text" id="newsletter" name="" placeholder="Ingresa tu email...">
+                    <button class="boton">
+                        <img class="botonIcon" src="./multimedia/iconos/sub.svg" alt="suscripcion">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="col-12 col-md-4 sitemap">
+                    <ul class="sitemapNav">
+                        <li class="sitemapItem"><h3>CUENTA</h3></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink">Mi cuenta</a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink">Carrito de compras</a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink">Formas de pago</a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink">Segui tu pedido</a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink">Entregas</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4 sitemap">
+                    <ul class="sitemapNav">
+                        <li class="sitemapItem"><h3>CATEGORIAS</h3></li>
+                        <li class="sitemapItem"><a href="./index.html" class="sitemapLink">Inicio</a></li>
+                        <li class="sitemapItem"><a href="./pages/computadoras.html" class="sitemapLink">Computadoras</a></li>
+                        <li class="sitemapItem"><a href="./pages/notebooks.html" class="sitemapLink">Notebooks</a></li>
+                        <li class="sitemapItem"><a href="./pages/productos.html" class="sitemapLink">Productos</a></li>
+                        <li class="sitemapItem"><a href="./pages/contacto.html" class="sitemapLink">Contacto</a></li>
+                </div>
+
+                <div class="col-12 col-md-4 sitemap">
+                    <ul class="sitemapNav">
+                        <li class="sitemapItem"><h3>ASISTENCIA</h3></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink"><i class="fas fa-undo"></i>Devolver un producto</a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink"><i class="fas fa-question"></i>Preguntas frecuentes</a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink"><i class="far fa-envelope"></i></a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink"><i class="fas fa-phone"></i></a></li>
+                        <li class="sitemapItem"><a href="./error-404.html" class="sitemapLink"><i class="far fa-clock"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footerInferior">
+                <div class="social">
+                    <a href="https://www.facebook.com" class="iconoSocial redondo" id="facebook" target="_blank"><i class="fab fa-2x fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com" class="iconoSocial redondo" id="instagram" target="_blank"><i class="fab fa-2x fa-instagram" aria-hidden="true"></i></a>
+                </div> 
+                <div class="copy">
+                    <p class="copyTxt">Copyright &copy; .NET Computacion</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <div class="btnWsp">
+        <a href="https://wa.me/+5492324697596" target="_blank">
+            <img src="./multimedia/hablamos.png" alt="Icono de whatsapp">
+        </a>
+    </div>
+
+    <!-- PRELOADER -->
+    <div class="loader" id="loader">
+        <img class="efectoIcon" src="./multimedia/logoaionsolo.png" alt="">
+    </div>
+    
+    <!-- BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- LOEADER JS -->
+    <script src="./js/preloader.js"></script>
+
+    <!-- BUSCADOR MOBILE -->
+    <script src="./js/barra-buscador.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

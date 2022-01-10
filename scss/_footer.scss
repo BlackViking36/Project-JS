@@ -1,0 +1,200 @@
+/* FOOTER */
+@import "variables";
+
+.footerInfo {
+    background-color: $fondo;
+    color: #f1f1f1;
+}
+
+.suscripcion {
+    background-color: $subfondo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 13em;
+    padding: 2rem;
+
+    &Txt {
+        text-align: center;
+    }
+}
+
+.search--sub {
+    min-width: 18em;
+}
+
+.sitemap {
+
+    padding: 1rem;
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: $colortitle;
+        text-transform: uppercase;
+    }
+
+    &Nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &Item {
+        list-style: none;
+        margin-bottom: .5rem;
+    }
+
+    &Link {
+        text-decoration: none;
+        color: $fondomain;
+
+        transition: all .5s;
+
+        i {
+            padding-right: 0.3rem;
+        }
+    }
+
+    &Link:hover {
+        color: $colortitle;
+    }
+}
+
+.footerInferior {
+    border-top: 1px solid $fondomain;
+    padding: 1rem;
+
+    p {
+        text-align: center;
+    }
+}
+
+.social {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.iconoSocial {
+    align-items: center;  
+    color: #9c9c9c;
+    display: flex;  
+    height: 50px;
+    justify-content: center;
+    margin: 2px; 
+    text-decoration: none; 
+    transition-duration: .3s;
+    width: 50px;
+
+    &:hover {
+        color: $fondomain;
+    }
+}
+
+.redondo {
+    border-radius: 50%;
+}
+
+#facebook:hover {
+    background-color: #3b5998;
+}
+
+#instagram:hover {
+    background-color: #dd2a7b;
+}
+
+@media only screen and (max-width: 576px) {
+    .suscripcion {
+        height: 10em;
+
+        &Txt {
+            font-size: 1rem;
+        
+            p {
+                display: none;
+            }
+    
+            h3 {
+                font-size: 1rem;
+            }  
+        }
+
+        .search--sub {
+            min-width: 15em;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .search--sub {
+        min-width: 24em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .search--sub {
+        max-width: 24em;
+    }
+}
+
+/* .footerContacto, .footerSuscripcion, .footerRedes {
+    width: 100%;
+    height: auto;
+} 
+.tituloInfo {
+    color: #00a8e7;
+}
+.tituloInfo h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.barraSuscripcion {
+    margin: 0;
+    width: 50%;
+}
+.tarjetas {
+    &__img {
+        width: 2.5em;
+        margin: .3em;
+    }
+}
+.search--sub {
+    width: 100%;
+}
+.social {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.iconoSocial {
+    align-items: center;  
+    color: #9c9c9c;
+    display: flex;  
+    height: 50px;
+    justify-content: center;
+    margin: 2px; 
+    text-decoration: none; 
+    transition-duration: .3s;
+    width: 50px;
+    &:hover {
+        color: $fondomain;
+    }
+}
+.redondo {
+    border-radius: 50%;
+}
+#facebook:hover {
+    background-color: #3b5998;
+}
+#instagram:hover {
+    background-color: #dd2a7b;
+} */
+
+
+
+
+
+
+/* FIN FOOTER */

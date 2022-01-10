@@ -1,0 +1,208 @@
+/* INDEX */
+@import "variables";
+
+.imagen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: inline-block;
+    &Info {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -30%);
+    }
+    &Zoom {
+        transition: 0.4s ease;
+    }
+    &:hover &Zoom {
+        transform: scale(1.04);
+    }
+    &Tittle {
+        color: $colortitle;
+    }
+    &Txt {
+        color: $coloretxt;
+    }
+}
+
+.titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: $colortitle;
+
+    &-mg {
+        margin-top: 5rem;
+    }
+}
+
+.titulo-prod {
+    @extend .titulo;
+    text-align: start;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 5rem;
+
+    &::after {
+        position: relative;
+        bottom: 5px;
+        margin-left: 10px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        flex-grow: 1;
+        content: '';
+    }
+}
+
+.texto {
+    font-size: 1.1rem;
+    text-align: center;
+    color: $coloretxt;
+}
+
+
+.logo-marca {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 1.5rem;
+}
+
+.productosPopulares {
+    border: 1px solid #f1f1f1 ;
+    background-color: #e7eaec;
+
+    border-radius: 8px;
+}
+
+.cardprod {
+    margin: .6em 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background-color: $fondomain;
+
+    transition: all 0.25s;
+    text-align: center;
+    overflow: hidden;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    &Img{
+        /* background: linear-gradient(180deg,#fff,#d5d5d5); */
+        background-color: $fondomain;
+
+        border-bottom: 1px solid #ddd;
+
+        width: 100%;
+        height: 60%;
+
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        /* EFECTO ZOOM IMAGEN CARD PRODUCTOS */
+        &-zoom {
+            transition: 0.4s ease;
+        }
+
+        &:hover &-zoom {
+            transform: scale(1.04);
+        }
+
+    }
+
+    &Precio {
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+    }
+
+    &Info {
+        width: 85%;
+        height: 6em;
+        overflow: hidden;
+        margin: auto;
+        margin-top: .5em;
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+/* CAROUSEL BS */
+
+.prev-icon--sli, .next-icon--sli {
+    background-image: none;
+}
+
+.icon--prev, .icon--next {
+    background-image: none;
+
+    i {
+        color: $colortitle;
+    }
+}
+.control-prev--new, .control-next--new {
+    width: 1px;
+    height: 30px;
+    top: 47%;
+    bottom: auto;
+}
+
+/* BOTON WHATSAPP */
+
+.btnWsp {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 998;
+
+    & {
+        animation-name: rotate;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 3s;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+
+    .imagen {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        display: inline-block;
+        &Info {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -45%);
+        }
+        &Tittle {
+            font-size: 1.3rem;
+        }
+        &Txt {
+            display: none;
+        }
+    }
+    
+}
+/* FIN INDEX */
