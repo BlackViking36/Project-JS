@@ -293,6 +293,27 @@
     animation-timing-function: ease-in-out;
     animation-delay: 3s; }
 
+.btnDrk ul {
+  list-style: none;
+  height: 120px;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 998; }
+
+.darkMode {
+  background-color: #030406;
+  color: #00a8e7; }
+  .darkMode .divMarcas {
+    background-color: #ffffff;
+    border-radius: 10px; }
+
+#box {
+  background-color: #030406;
+  width: 50px;
+  height: 50px;
+  margin-top: 12px; }
+
 @media (min-width: 769px) and (max-width: 991px) {
   .imagen {
     position: relative;
@@ -593,58 +614,6 @@
   .search--sub {
     max-width: 24em; } }
 
-/* .footerContacto, .footerSuscripcion, .footerRedes {
-    width: 100%;
-    height: auto;
-} 
-.tituloInfo {
-    color: #00a8e7;
-}
-.tituloInfo h3 {
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-.barraSuscripcion {
-    margin: 0;
-    width: 50%;
-}
-.tarjetas {
-    &__img {
-        width: 2.5em;
-        margin: .3em;
-    }
-}
-.search--sub {
-    width: 100%;
-}
-.social {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-.iconoSocial {
-    align-items: center;  
-    color: #9c9c9c;
-    display: flex;  
-    height: 50px;
-    justify-content: center;
-    margin: 2px; 
-    text-decoration: none; 
-    transition-duration: .3s;
-    width: 50px;
-    &:hover {
-        color: $fondomain;
-    }
-}
-.redondo {
-    border-radius: 50%;
-}
-#facebook:hover {
-    background-color: #3b5998;
-}
-#instagram:hover {
-    background-color: #dd2a7b;
-} */
 /* FIN FOOTER */
 /* ERROR-404 */
 .body-error {
