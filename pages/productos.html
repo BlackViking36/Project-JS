@@ -59,15 +59,17 @@
                     <!-- BOTON QUE AL CLICKEAR APARECE EL BUSCADOR -->
                     <a href="#" id="btnsearch" class="buscar-icon"><img src="/multimedia/iconos/searchwhite.svg" class="botonIcon botonIcon--buscar" alt=""></a>
 
-                    <a class="iconstopThumbnail" href="/error-404.html">
+                    <!-- <a class="iconstopThumbnail" href="/error-404.html">
                         <img src="/multimedia/iconos/loginnoconec.svg" class="botonIcon" alt="Login de cuenta">
                         <span class="iconstopTxt">Mi cuenta</span>
-                    </a>
+                    </a> -->
 
-                    <a class="iconstopThumbnail" href="/error-404.html">
+                    <!-- <a class="iconstopThumbnail" href="/error-404.html">
                         <img src="/multimedia/iconos/shopnoconec.svg" class="botonIcon" alt="Carrito de compras">
                         <span class="iconstopTxt">Mi carrito</span>
-                    </a>
+                    </a> -->
+
+                    <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
 
                 </div>
 
@@ -193,9 +195,35 @@
                 <button class="contLeft-btn">Aplicar</button>
             </div>
 
+            <!-- MODAL CARRITO -->
+            <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body" id="modal-body">
+                        </div>
+
+                        <div class="row ml-auto">
+                            <p id="precioTotal"></p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="botonFinalizarCompra">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN MODAL -->
+
             <!-- PRODUCTOS -->
-            <div class="contRight" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0">
-                <div class="producto1" id="prod">
+            <div class="contRight" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0" id="divProductos">
+                <!-- <div class="producto1" id="prod">
                     <div class="cardprod">
                         <div class="cardprodImg d-flex justify-content-center col-12">
                             <img src="../multimedia/productos/3060ti.png" class="img-fluid cardprodImg-zoom" alt="Placa de video RTX 3060ti Gigabyte">
@@ -363,7 +391,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="producto1" id="note">
+
+                <!-- NOTEBOOKS -->
+                <!-- <div class="producto1" id="note">
                     <div class="cardprod">
                         <div class="cardprodImg d-flex justify-content-center col-12">
                             <img src="../multimedia/notebooks/hp240g7.jpg" class="img-fluid cardprodImg-zoom" alt="Notebook Hp 240 G7 Intel Celeron N4020 8gb Ram 1tb disco rigido Windows 10">
@@ -531,6 +561,8 @@
                         </div>
                     </div>
                 </div>
+
+                COMPUTADORAS
                 <div class="producto1" id="pcs">
                     <div class="cardprod">
                         <div class="cardprodImg d-flex justify-content-center col-12">
@@ -698,7 +730,7 @@
                             <a class="button button--prod" href="#">Añadir al carrito</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </section>
@@ -801,13 +833,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     
     <!-- BS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- LOEADER JS -->
     <script src="/js/preloader.js"></script>
-
-    <!-- BUSCADOR MOBILE -->
-    <script src="/js/barra-buscador.js"></script>
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -817,8 +846,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- PRODUCTOS JS -->
+    <script src="/js/productos.js"></script>
 
+    <!-- DARKMODE Y PRODUCTOS -->
     <script src="/js/script.js"></script>
 
 </body>

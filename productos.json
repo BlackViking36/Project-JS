@@ -1,83 +1,75 @@
 [
     {
-        "nombre": "Notebook",
-        "marca": "Lenovo",
-        "modelo": "Y510P",
+        "nombre": "Placa de video RTX 3060ti Gigabyte",
         "precio": 60000,
         "stock": 30,
-        "img": "notebook-lenovo.jpg"
+        "img": "/multimedia/productos/3060ti.png"
     },
     {
-        "nombre": "Celular",
-        "marca": "Xiomi",
-        "modelo": "Mi-9",
+        "nombre": "Placa de video RTX 3070 EVGA",
         "precio": 35000,
         "stock": 20,
-        "img": "xiaomi-mi-9.jpg"
+        "img": "/multimedia/productos/3070.png"
     },
     {
-        "nombre": "Smart Tv",
-        "marca": "Novatech",
-        "modelo": "50D1U",
+        "nombre": "Fuente Cooler Master Elite V6 600W",
         "precio": 57000,
         "stock": 15,
-        "img": "smart-tv-novatech.jpg"
+        "img": "/multimedia/productos/cooler-master-v3-600w.png"
     },
     {
-        "nombre": "Camara Deportiva",
-        "marca": "iQual",
-        "modelo": "C40",
+        "nombre": "Memoria RAM Hyperx 8GB 2600MHz",
         "precio": 8000,
         "stock": 30,
-        "img": "camara-iqual.jpg"
+        "img": "/multimedia/productos/hyperx-ram-8gb-2600.png"
     },
     {
-        "nombre": "Mouse",
-        "marca": "Logitech",
-        "modelo": "G502",
+        "nombre": "Procesador Intel i5 10400",
         "precio": 1400,
         "stock": 7,
-        "img": "mouse-logitech.jpg"
+        "img": "/multimedia/productos/i5-10400.png"
     },
     {
-        "nombre": "Auriculares",
-        "marca": "Motorola",
-        "modelo": "Pulse Escape",
+        "nombre": "Procesador AMD Ryzen 5 5600X",
         "precio": 4000,
         "stock": 20,
-        "img": "motorola-pulse.jpg"
+        "img": "/multimedia/productos/r5-5600x.png"
     },
     {
-        "nombre": "iPhone",
-        "marca": "Apple",
-        "modelo": "X Silver",
+        "nombre": "Disco solido SSD Gigabyte 240GB",
         "precio": 250000,
         "stock": 10,
-        "img": "iphone-x.jpg"
+        "img": "/multimedia/productos/ssd-240gb-gigabyte.png"
     },
     {
-        "nombre": "Apple TV",
-        "marca": "Apple ",
-        "modelo": "32 Gb",
+        "nombre": "Motherboard TUF Gaming Z490 Plus",
         "precio": 45000,
         "stock": 30,
-        "img": "apple-tv.jpg"
+        "img": "multimedia/productos/tuf-gaming-z490-plus.png"
     },
     {
-        "nombre": "Parlante",
-        "marca": "Kalley",
-        "modelo": "SPK200",
+        "nombre": "Disco rigido Western Digital 1tb blue",
         "precio": 34000,
         "stock": 21,
-        "img": "parlante-kalley.png"
+        "img": "/multimedia/productos/wdblue1tb.png"
     },
     {
-        "nombre": "Mac",
-        "marca": "Apple",
-        "modelo": "Air",
+        "nombre": "Memoria RAM PNY xlr 8gb DDR4 3200MHz",
         "precio": 13000,
         "stock": 25,
-        "img": "mac-air.jpg"
+        "img": "/multimedia/productos/rampnyxlr8.png"
+    },
+    {
+        "nombre": "Water Cooler Cooler Master Masterliquid Ml240l v2 Argb",
+        "precio": 13000,
+        "stock": 25,
+        "img": "/multimedia/productos/masterliquid.png"
+    },
+    {
+        "nombre": "Gabinete Thermaltake S100 white",
+        "precio": 13000,
+        "stock": 25,
+        "img": "/multimedia/productos/gabinetethermaltake.png"
     }
     
 ]

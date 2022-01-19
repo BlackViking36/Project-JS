@@ -1,3 +1,4 @@
+// INICIO DARKMODE
 let darkMode;
 
 if(localStorage.getItem('darkMode')) {
@@ -35,7 +36,11 @@ $(() => {
 
         })
     })
+    // FIN DARKMODE
 
+
+
+    // INICIO CARRITO
     localStorage.setItem('carrito', JSON.stringify([]))
     let divProductos = document.getElementById("divProductos")
     let botonCarrito = document.getElementById("botonCarrito")
@@ -44,21 +49,25 @@ $(() => {
     let parrafoCompra = document.getElementById('precioTotal')
     let acumulador;
     
-    fetch('productos.json')
+    fetch('../productos.json')
     .then(response => response.json())
     .then(dataProductos => {
         dataProductos.forEach((productoEnArray, indice)=> {
     
             divProductos.innerHTML += `
-            <div class="card border-success mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
-                <div class="card-header">${productoEnArray.nombre}</div>
-                <img src="./img/${productoEnArray.img}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title">${productoEnArray.marca}</h4>
-                    <p class="card-text">${productoEnArray.modelo}</p>
-                    <p class="card-text">$${productoEnArray.precio}</p>
-                    <p class="card-text">Stock:${productoEnArray.stock}</p>
-                    <button id="boton${indice}" class="btn btn-dark"><i class="fas fa-cart-plus fa-1x"></i></button>
+            <div class="producto1" id="prod">
+                <div class="cardprod" id="producto${indice}">
+                    <div class="cardprodImg d-flex justify-content-center col-12">
+                        <img src="../${productoEnArray.img}" class="img-fluid cardprodImg-zoom" alt="Placa de video RTX 3060ti Gigabyte">
+                    </div>
+                    <div class="cardprodInfo">
+                        <p>${productoEnArray.nombre}</p>
+                        <p>${productoEnArray.stock}</p>
+                    </div>
+                    <div class="cardprodPrecio">
+                        <span>$${productoEnArray.precio}</span>
+                        <button id="boton${indice}" class="button button--prod">Añadir al carrito</button>
+                    </div>
                 </div>
             </div>
             `
@@ -71,12 +80,12 @@ $(() => {
                     productos[index].cant++
                     localStorage.setItem('carrito', JSON.stringify(productos))
                 } else {
-                    let nuevoProducto = new Producto(productoEnArray.nombre, productoEnArray.marca, 
-                    productoEnArray.modelo, productoEnArray.precio, productoEnArray.stock, productoEnArray.img)
+                    let nuevoProducto = new Producto(productoEnArray.nombre, productoEnArray.precio, productoEnArray.stock, productoEnArray.img)
                     productos.push(nuevoProducto)
                     localStorage.setItem('carrito', JSON.stringify(productos))
                 }
-                
+            
             })
         })
     })
+    // FIN CARRITO
