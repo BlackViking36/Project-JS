@@ -200,6 +200,10 @@
         background-color:$fondomain;
         border-radius: 10px;
     }
+
+    & .productosPopulares {
+        background-color:$fondo;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
