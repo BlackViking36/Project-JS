@@ -62,7 +62,7 @@ $(() => {
                     </div>
                     <div class="cardprodInfo">
                         <p>${productoEnArray.nombre}</p>
-                        <p>${productoEnArray.stock}</p>
+                        <p> Stock: ${productoEnArray.stock}</p>
                     </div>
                     <div class="cardprodPrecio">
                         <span>$${productoEnArray.precio}</span>
@@ -77,7 +77,7 @@ $(() => {
             document.getElementById(`boton${indice}`).addEventListener('click', () => {
                 if(productos.find(producto => producto.nombre == productoEnArray.nombre)) {
                     let index = productos.findIndex(producto => producto.nombre == productoEnArray.nombre)
-                    productos[index].cant++
+                    productos[index].cant++;
                     localStorage.setItem('carrito', JSON.stringify(productos))
                 } else {
                     let nuevoProducto = new Producto(productoEnArray.nombre, productoEnArray.precio, productoEnArray.stock, productoEnArray.img)
