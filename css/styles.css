@@ -308,7 +308,10 @@
     background-color: #ffffff;
     border-radius: 10px; }
   .darkMode .productosPopulares {
-    background-color: #030406; }
+    background-color: #212529; }
+  .darkMode .contactoIcon {
+    background-color: #212529;
+    border-radius: 100%; }
 
 @media (min-width: 769px) and (max-width: 991px) {
   .imagen {
@@ -440,7 +443,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../multimedia/contacto/fondocontacto.png);
+    background-image: url(../multimedia/contacto/fondocontacto.jpg);
     background-size: cover;
     background-position: center center; }
     .formularioInfo .infoTittle {

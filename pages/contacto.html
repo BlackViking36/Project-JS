@@ -7,10 +7,11 @@
     <!-- SEO -->
     <meta name="description" content="Especialistas del mundo del PC Gamer, Dedicados a la venta de hardware.">
     <meta name="keywords" content="pc, Gaming, gamer, computadoras, computacion, informatica, monitor, placa de video, gpu, fuente, cpu, micro, procesador, memoria, ram, 144hz, motherboard, placa madre, informatica, arma tu pc, disco rigido, disco solido, hdd, ssd, teclado, mouse, mecanico, optico, pc armada, rgb, Hardware, almacenamiento">
-    <title>.NET Computacion</title>
+    <title>.NET Computacion - Productos</title>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -19,9 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -57,18 +55,17 @@
                 <div class="iconstop">
 
                     <!-- BOTON QUE AL CLICKEAR APARECE EL BUSCADOR -->
-                    <a href="#" id="btnsearch" class="buscar-icon"><img src=/multimedia/iconos/searchwhite.svg" class="botonIcon botonIcon--buscar" alt=""></a>
+                    <a href="#" id="btnsearch" class="buscar-icon"><img src="/multimedia/iconos/searchwhite.svg" class="botonIcon botonIcon--buscar" alt=""></a>
 
                     <a class="iconstopThumbnail" href="/error-404.html">
                         <img src="/multimedia/iconos/loginnoconec.svg" class="botonIcon" alt="Login de cuenta">
                         <span class="iconstopTxt">Mi cuenta</span>
                     </a>
 
-                    <a class="iconstopThumbnail" href="/error-404.html">
+                    <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-primary iconstopThumbnail">
                         <img src="/multimedia/iconos/shopnoconec.svg" class="botonIcon" alt="Carrito de compras">
                         <span class="iconstopTxt">Mi carrito</span>
                     </a>
-
                 </div>
 
             </div>
@@ -80,13 +77,13 @@
                 <i class="fas fa-bars burger"></i>
             </label>
         <nav class="nav">
-                <ul class="menu">
-                    <li class="menuItem"><a class="menuLink" href="/index.html">Inicio</a></li>
-                    <li class="menuItem"><a class="menuLink" href="/pages/computadoras.html">Computadoras</a></li>
-                    <li class="menuItem"><a class="menuLink" href="/pages/notebooks.html">Notebooks</a></li>
-                    <li class="menuItem"><a class="menuLink" href="/pages/productos.html">Productos</a></li>
-                    <li class="menuItem"><a class="menuLink" href="/pages/contacto.html">Contacto</a></li>
-                </ul>
+            <ul class="menu">
+                <li class="menuItem"><a class="menuLink" href="/index.html">Inicio</a></li>
+                <li class="menuItem"><a class="menuLink" href="/pages/productos.html#pcs">Computadoras</a></li>
+                <li class="menuItem"><a class="menuLink" href="/pages/productos.html#note">Notebooks</a></li>
+                <li class="menuItem"><a class="menuLink" href="/pages/productos.html#prod">Productos</a></li>
+                <li class="menuItem"><a class="menuLink" href="/pages/contacto.html">Contacto</a></li>
+            </ul>
         </nav>
 
     </header>
@@ -121,10 +118,7 @@
                 <div class="formularioInfo">
                     <div class="infoTittle">
                         <img src="../multimedia/contacto/alien.png" alt="alien">
-                        <h3 class="titulo titulo-contact">Contactate
-                            <br>
-                            con nosotros
-                        </h3>
+                        <h3 class="titulo titulo-contact">Contactate con nosotros</h3>
                     </div>
                     <div class="infoItems">
                         <p><i class="far fa-envelope"></i> netcomputacion@gmail.com</p>
@@ -246,25 +240,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     
     <!-- BS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- LOEADER JS -->
     <script src="/js/preloader.js"></script>
 
-    <!-- BUSCADOR MOBILE -->
-    <script src="/js/barra-buscador.js"></script>
-
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         AOS.init();
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- PRODUCTOS JS -->
+    <script src="/js/productos.js"></script>
 
+    <!-- DARKMODE Y PRODUCTOS -->
     <script src="/js/script.js"></script>
+
+    <!-- EVENTOS JS -->
+    <script src="/js/eventos.js"></script>
 
 </body>
 

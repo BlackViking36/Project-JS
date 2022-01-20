@@ -202,7 +202,12 @@
     }
 
     & .productosPopulares {
-        background-color:$fondo;
+        background-color:$coloretxt;
+    }
+
+    & .contactoIcon {
+        background-color:$coloretxt;
+        border-radius: 100%;
     }
 }
 

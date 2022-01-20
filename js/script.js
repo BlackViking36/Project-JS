@@ -58,7 +58,23 @@ $(() => {
             <div class="producto1" id="prod">
                 <div class="cardprod" id="producto${indice}">
                     <div class="cardprodImg d-flex justify-content-center col-12">
-                        <img src="../${productoEnArray.img}" class="img-fluid cardprodImg-zoom" alt="Placa de video RTX 3060ti Gigabyte">
+                        <img src="../${productoEnArray.img}" class="img-fluid cardprodImg-zoom" alt="imgPro">
+                    </div>
+                    <div class="cardprodInfo">
+                        <p>${productoEnArray.nombre}</p>
+                        <p> Stock: ${productoEnArray.stock}</p>
+                    </div>
+                    <div class="cardprodPrecio">
+                        <span>$${productoEnArray.precio}</span>
+                        <button id="boton${indice}" class="button button--prod">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto2" id="note">
+                <div class="cardprod" id="producto${indice}">
+                    <div class="cardprodImg d-flex justify-content-center col-12">
+                        <img src="../${productoEnArray.img}" class="img-fluid cardprodImg-zoom" alt="imgNote">
                     </div>
                     <div class="cardprodInfo">
                         <p>${productoEnArray.nombre}</p>
