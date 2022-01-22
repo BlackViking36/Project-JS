@@ -1,89 +1,104 @@
 [
     {
+        "indice": "prod",
         "nombre": "Placa de video RTX 3060ti Gigabyte",
         "precio": 60000,
         "stock": 30,
         "img": "/multimedia/productos/3060ti.png"
     },
     {
+        "indice": "prod",
         "nombre": "Placa de video RTX 3070 EVGA",
         "precio": 35000,
         "stock": 20,
         "img": "/multimedia/productos/3070.png"
     },
     {
+        "indice": "prod",
         "nombre": "Fuente Cooler Master Elite V6 600W",
         "precio": 57000,
         "stock": 15,
         "img": "/multimedia/productos/cooler-master-v3-600w.png"
     },
     {
+        "indice": "prod",
         "nombre": "Memoria RAM Hyperx 8GB 2600MHz",
         "precio": 8000,
         "stock": 30,
         "img": "/multimedia/productos/hyperx-ram-8gb-2600.png"
     },
     {
+        "indice": "prod",
         "nombre": "Procesador Intel i5 10400",
         "precio": 1400,
         "stock": 7,
         "img": "/multimedia/productos/i5-10400.png"
     },
     {
+        "indice": "prod",
         "nombre": "Procesador AMD Ryzen 5 5600X",
         "precio": 4000,
         "stock": 20,
         "img": "/multimedia/productos/r5-5600x.png"
     },
     {
+        "indice": "prod",
         "nombre": "Disco solido SSD Gigabyte 240GB",
         "precio": 250000,
         "stock": 10,
         "img": "/multimedia/productos/ssd-240gb-gigabyte.png"
     },
     {
+        "indice": "note",
         "nombre": "Motherboard TUF Gaming Z490 Plus",
         "precio": 45000,
         "stock": 30,
         "img": "multimedia/productos/tuf-gaming-z490-plus.png"
     },
     {
+        "indice": "note",
         "nombre": "Disco rigido Western Digital 1tb blue",
         "precio": 34000,
         "stock": 21,
         "img": "/multimedia/productos/wdblue1tb.png"
     },
     {
+        "indice": "note",
         "nombre": "Memoria RAM PNY xlr 8gb DDR4 3200MHz",
         "precio": 13000,
         "stock": 25,
         "img": "/multimedia/productos/rampnyxlr8.png"
     },
     {
+        "indice": "note",
         "nombre": "Water Cooler Cooler Master Masterliquid Ml240l v2 Argb",
         "precio": 13000,
         "stock": 25,
         "img": "/multimedia/productos/masterliquid.png"
     },
     {
+        "indice": "note",
         "nombre": "Gabinete Thermaltake S100 white",
         "precio": 13000,
         "stock": 25,
         "img": "/multimedia/productos/gabinetethermaltake.png"
     },
     {
+        "indice": "note",
         "nombre": "Notebook Hp 240 G7 Intel Celeron N4020 8gb Ram 1tb Hdd W10",
         "precio": 60000,
         "stock": 30,
         "img": "/multimedia/notebooks/hp240g7.jpg"
     },
     {
+        "indice": "note",
         "nombre": "Notebook hp 250 G7 I3 4gb ram 1tb disco rigido Free Dos",
         "precio": 35000,
         "stock": 20,
         "img": "/multimedia/notebooks/hp240g7.jpg"
     },
     {
+        "indice": "note",
         "nombre": "Notebook Lenovo Ideapad Slim 1-14ast-05 14 Amd A4 9120e 4gb 64gb Emmc W10",
         "precio": 57000,
         "stock": 15,
@@ -96,12 +111,14 @@
         "img": "/multimedia/notebooks/asusx515ea.jpg"
     },
     {
+        "indice": "note",
         "nombre": "Notebook Acer Aspire 5 A515-55-35a3 15.6 Intel Core I3 1005g1 4gb Ram 1tb Hdd Freedos",
         "precio": 1400,
         "stock": 7,
         "img": "/multimedia/notebooks/aceraspire5a515.png"
     },
     {
+        "indice": "note",
         "nombre": "Notebook Bangho Max L4 I1 14p Intel Celeron N4020 4gb Ram 120gb Ssd W10h",
         "precio": 4000,
         "stock": 20,
