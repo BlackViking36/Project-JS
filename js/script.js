@@ -68,7 +68,6 @@ function cargarEventosModal(productosDelStorage) {
 
     productosDelStorage.forEach((productoCarrito, indice) => {
         document.getElementById(`botonEliminar${indice}`).addEventListener('click', () => {
-            console.log(`Producto ${productoCarrito.nombre} eliminado`)
             document.getElementById(`productoCarrito${indice}`).remove()
             productos.splice(indice, 1)
             localStorage.setItem('carrito', JSON.stringify(productos))
@@ -78,7 +77,6 @@ function cargarEventosModal(productosDelStorage) {
 
     productosDelStorage.forEach((productoCarrito, indice) => {
         document.getElementById(`sum${indice}`).addEventListener('click', () => {
-            console.log()
             if(productos[indice].cant < productos[indice].stock) {
                 productos[indice].cant++
                 localStorage.setItem('carrito', JSON.stringify(productos))
@@ -90,7 +88,6 @@ function cargarEventosModal(productosDelStorage) {
 
     productosDelStorage.forEach((productoCarrito, indice) => {
         document.getElementById(`rest${indice}`).addEventListener('click', () => {
-            console.log()
             if(productos[indice].cant > 1) {
                 productos[indice].cant--
                 localStorage.setItem('carrito', JSON.stringify(productos))

@@ -16,7 +16,6 @@ function show() {
 
 function update() {
     canvasContext.clearRect(0,0, canvas.width, canvas.height)
-    // console.log("update");
     snake.move()
     eatApple()
     checkHitWall()
@@ -129,8 +128,6 @@ class Snake {
 
 class Apple {
     constructor() {
-        // console.log("apple");
-        // console.log(snake.size);
         let isTouching
 
         while(true) {
@@ -143,7 +140,6 @@ class Apple {
                     isTouching = true
                 }
             }
-            // console.log(this.x, this.y);
             this.size = snake.size
             this.color = "red"
 
