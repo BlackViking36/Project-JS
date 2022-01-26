@@ -1,4 +1,4 @@
-const canvas = document.getElementById("canvas")
+const canvas = document.getElementById("canvas") // dibujamos el canvas
 const canvasContext = canvas.getContext('2d');
 
 window.onload = () => {
@@ -15,7 +15,7 @@ function show() {
 }
 
 function update() {
-    canvasContext.clearRect(0,0, canvas.width, canvas.height)
+    canvasContext.clearRect(0,0, canvas.width, canvas.height) // contexto del canvas w-400 h-400
     snake.move()
     eatApple()
     checkHitWall()
@@ -28,7 +28,7 @@ function eatApple() {
     }
 }
 
-function checkHitWall() {
+function checkHitWall() { // EVITAR COLICIONES CON LAS PAREDES
     let headTail = snake.tail[snake.tail.length - 1]
 
     if(headTail.x == -snake.size) {
@@ -46,13 +46,6 @@ function draw() {
     createRect(0,0,canvas.width,canvas.height, "black");
     createRect(0,0,canvas.width,canvas.height);
 
-    // let img = new Image();
-    // img.src = "/multimedia/BlackLogo.png";
-
-    // img.onload = function() {
-    // canvasContext.drawImage(img, 0, 0);
-    // }
-
     for (let i = 0; i < snake.tail.length; i++) {
         createRect(snake.tail[i].x + 2.5, snake.tail[i].y + 2.5, snake.size - 5, snake.size - 5, "white");
     }
@@ -63,12 +56,12 @@ function draw() {
     createRect(apple.x, apple.y, apple.size, apple.size, apple.color);
 }
 
-function createRect(x, y, width, height, color) {
+function createRect(x, y, width, height, color) { // CREACION DEL RECTANGULO/CANVAS
     canvasContext.fillStyle = color;
     canvasContext.fillRect(x, y, width, height)
 }
 
-window.addEventListener("keydown", (event) => {
+window.addEventListener("keydown", (event) => { // MOVIMIENTOS DEL SNAKE
     setTimeout(() => {
         if(event.keyCode == 37 && snake.rotateX != 1) {
             snake.rotateX = -1
@@ -83,7 +76,7 @@ window.addEventListener("keydown", (event) => {
             snake.rotateX = 0
             snake.rotateY = 1;
         }
-    }, 1)
+    })
 })
 
 
@@ -126,7 +119,7 @@ class Snake {
     }
 }
 
-class Apple {
+class Apple { // COMIDA DEL SNAKE
     constructor() {
         let isTouching
 
