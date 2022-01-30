@@ -312,6 +312,8 @@
   .darkMode .contactoIcon {
     background-color: #212529;
     border-radius: 100%; }
+  .darkMode .cardprodPrecio {
+    color: #212529; }
 
 @media (min-width: 769px) and (max-width: 991px) {
   .imagen {
@@ -352,7 +354,8 @@
   .itemList .contLeft h1 {
     color: #00a8e7; }
   .itemList .contLeft h2 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    color: #00a8e7; }
   .itemList .contLeft-btn {
     width: 120px;
     height: 35px;
